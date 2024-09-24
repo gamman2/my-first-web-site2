@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     </title>
     <style>
+        body{
+            margin:0;
+        }
         a{
             color:black;
             text-decoration:none;
@@ -12,27 +15,42 @@
         h1{
             font-size: 45px;
             text-align:center;
-            border-bottom: 1px grey solid;
+            border-bottom: 1px black solid;
             margin:0;
+            padding:20px;
         }
         ol{
-            border-right: 1px grey solid;
+            border-right: 1px black solid;
             width:100px;
             margin:0;
             padding:20px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol{
+            padding-left: 33px;
+        }
+        #grid #article{
+            padding-left:25px;
         }
     </style>
     </head>
 <body>
     <h1><a href=index.html>귀여운 캐릭터</a></h1>
-<ol>
+<div id="grid">
+  <ol>
     <li><a href=1.html>라이언</a></li>
     <li><a href=2.html>춘식이</a></li>
     <li><a href=3.html>Qoo</a></li>
-</ol>
-<h2>춘식이</h2>
-<img src="춘식.jpg" width="300">
-<p>길거리 출신 성별 미상[3]의 고양이로 라이언의 반려묘이다. 애완동물이라고는 하지만 라이언을 비롯한 다른 카카오프렌즈와 동등한 인격체로 취급되고 있으며 사람처럼 행동하고 말을 할 수 있다. 집사인 라이언이 갈기가 없어서 사자가 아닌 곰으로 오해받는 것과 비슷하게, 귀가 둥글어서인지 고양이가 아닌 것 같다는 오해를 받기도 한다.
-</p>
+  </ol>
+  <div id="article">
+    <h2>춘식이</h2>
+    <img src="춘식.jpg" width="300">
+    <p>길거리 출신 성별 미상[3]의 고양이로 라이언의 반려묘이다. 애완동물이라고는 하지만 라이언을 비롯한 다른 카카오프렌즈와 동등한 인격체로 취급되고 있으며 사람처럼 행동하고 말을 할 수 있다. 집사인 라이언이 갈기가 없어서 사자가 아닌 곰으로 오해받는 것과 비슷하게, 귀가 둥글어서인지 고양이가 아닌 것 같다는 오해를 받기도 한다.
+    </p>
+  </div>
+</div>
 </body>
 </html>
